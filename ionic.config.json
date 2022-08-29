@@ -1,0 +1,7 @@
+{
+  "name": "TourParty",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
