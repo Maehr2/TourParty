@@ -1,41 +1,33 @@
 <ion-app>
-  <ion-content >
-  <ion-menu side="start" menuId="first" contentId="main">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Opciones</ion-title>
-      </ion-toolbar>
-    </ion-header> 
-    <ion-content>
-      <ion-list>
-        <ion-button expand="full" fill="outline">Mis viajes</ion-button>
-        <ion-button expand="full" fill="outline">Metodos de pago</ion-button>
-        <ion-button expand="full" fill="outline">SALIR</ion-button>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-  <ion-router-outlet id="main"></ion-router-outlet>
+
+
   <ion-header>
-    <div class="color-back">
-    <ion-toolbar color="rgb 30-187-215">
+
+
+    <ion-toolbar>
+      <app-navmenu></app-navmenu>
       <ion-buttons slot="start">
-        <ion-menu-button auto-hide="false"></ion-menu-button>
+        <ion-menu-button autoHide="false"></ion-menu-button>
       </ion-buttons>
       <ion-buttons slot="secondary">
-        <ion-button>
-          <ion-icon slot="icon-only" name="star"></ion-icon>
-        </ion-button>
       </ion-buttons>
-      <ion-title>
+
+    </ion-toolbar>
+
+    <div class="color-back">
+    <ion-toolbar color="rgb 30-187-215">
+          <ion-title>
         <div>
           <h1 class="neonText">
             TOUR PARTY
           </h1></div>
       </ion-title>
-
     </ion-toolbar>
-  </div> 
+  </div>
   </ion-header>
+  
+<ion-content>
 </ion-content>
+</ion-app>
 
-  </ion-app>
+

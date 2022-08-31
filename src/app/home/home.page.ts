@@ -3,6 +3,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
+import { NAVMENUComponent } from '../navmenu/navmenu.component';
+
+
+
 
 
 
@@ -15,6 +19,16 @@ import { MenuController } from '@ionic/angular';
 export class HomePage {
   data: any; // Generamos una variable Any (permite cualquier valor)
 
+
+  // Generamos una variable Any (permite cualquier valor)
+
+
+
+// llamando al componente del nav
+
+
+
+
   /**
    * En el constructor del HomePage se colocan por parametros
    * todas aquellas propiedades con el siguiente formato
@@ -22,7 +36,7 @@ export class HomePage {
    * activeRoute = identificador
    * ActiveRoute = Tipo de Objeto
    * : Indica que el identificador sera de la clase posterior a los : puntos
-   * 
+   *
    */
   constructor(private activeroute: ActivatedRoute, private router: Router) {
     // Se llama a la ruta activa y se obtiene sus parametros mediante una subscripcion
@@ -32,12 +46,9 @@ export class HomePage {
         console.log(this.data) // Muestra por consola lo traido
       }else{this.router.navigate(["/login"])} // Si no tiene extra la navegacion actual navegar al login
     });
+
+
+
+
   }
-
-  
 }
-
-
-
-
-

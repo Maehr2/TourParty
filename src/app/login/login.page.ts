@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
+import { LoadingController } from '@ionic/angular';
 
 
 @Component({
@@ -16,12 +17,20 @@ export class LoginPage implements OnInit {
     usuario:"",
     password:""
   }
-  constructor(private router: Router) { } // Se debe instanciar
+  constructor(private router: Router, private loadingCtrl: LoadingController) { } // Se debe instanciar
 
   ngOnInit() {
   }
-  ingresar(){
+  async ingresar(){
     // Se declara e instancia un elemento de tipo NavigationExtras
+        const loading = await this.loadingCtrl.create({
+      message: 'Loading...',
+      duration: 3000,
+      cssClass: 'Crescent',
+    });
+
+    loading.present();
+
     let navigationExtras: NavigationExtras = {
       state: {
         user: this.user // Al estado se asignamos un objeto con clave y valor
@@ -29,8 +38,11 @@ export class LoginPage implements OnInit {
     };
     this.router.navigate(['/home'],navigationExtras); // navegamos hacia el Home y enviamos información adicional
   }
-}
+
+  }
 
 
- 
+
+
+
 
