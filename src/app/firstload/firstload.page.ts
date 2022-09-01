@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
+
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-firstload',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstloadPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private loadingCtrl: LoadingController) {
+//sensasion splash por que no supe usar 
+   setTimeout(()=>{
+    this.router.navigateByUrl('login');
+
+   },3000);
+  }
 
   ngOnInit() {
   }
 
-}
+
+  }
+

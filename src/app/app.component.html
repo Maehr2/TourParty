@@ -1,3 +1,45 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menu-id="tab-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+       <ion-menu-toggle> 
+        <ion-item routerLink="../home">
+          <ion-icon name="home-outline" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle> 
+      <ion-menu-toggle> 
+       <ion-item routerLink="../perfil">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-item>
+      </ion-menu-toggle> 
+      <ion-menu-toggle> 
+        <ion-item routerLink="../seguridad">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-label>Seguridad</ion-label>
+          </ion-item>
+        </ion-menu-toggle>  
+        <ion-menu-toggle> 
+        <ion-item routerLink="../ayuda">
+          <ion-icon name="bandage-outline" slot="start"></ion-icon>
+          <ion-label>Ayuda</ion-label>
+        </ion-item>
+      </ion-menu-toggle> 
+      <ion-menu-toggle> 
+        <ion-item routerLink="../login">
+          <ion-icon name="exit-outline"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-item>
+      </ion-menu-toggle> 
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
+

@@ -3,7 +3,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
-import { NAVMENUComponent } from '../navmenu/navmenu.component';
 
 
 
@@ -18,7 +17,7 @@ import { NAVMENUComponent } from '../navmenu/navmenu.component';
 })
 export class HomePage {
   data: any; // Generamos una variable Any (permite cualquier valor)
-
+  myImagePath = 'https://unsplash.com/es/fotos/S02wWY7Ru38'
 
   // Generamos una variable Any (permite cualquier valor)
 

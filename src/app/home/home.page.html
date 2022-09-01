@@ -2,32 +2,29 @@
 
 
   <ion-header>
-
-
-    <ion-toolbar>
-      <app-navmenu></app-navmenu>
-      <ion-buttons slot="start">
-        <ion-menu-button autoHide="false"></ion-menu-button>
-      </ion-buttons>
-      <ion-buttons slot="secondary">
-      </ion-buttons>
-
-    </ion-toolbar>
-
     <div class="color-back">
-    <ion-toolbar color="rgb 30-187-215">
+    <ion-toolbar color="Primary">
           <ion-title>
-        <div>
+        <div >
           <h1 class="neonText">
-            TOUR PARTY
+            Tour Party
           </h1></div>
       </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button menu= "tab-menu" autoHide="false"></ion-menu-button>
+      </ion-buttons>
     </ion-toolbar>
   </div>
   </ion-header>
-  
-<ion-content>
+<ion-content  >
+ <ion-label class="neonText" >Bienvenido : {{data.usuario}}</ion-label>
+
+ <ion-link rel="preconnect" href="https://fonts.gstatic.com"></ion-link>
+ <ion-link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"></ion-link>
+
+ <a href="#" class="neon-button">Neon</a>
+
+
 </ion-content>
 </ion-app>
-
 
